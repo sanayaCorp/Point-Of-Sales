@@ -246,8 +246,8 @@ inherited TransaksiItem: TTransaksiItem
         Width = 181
         Height = 216
         Align = alBottom
-        ExplicitTop = -149
-        ExplicitWidth = 181
+        ExplicitLeft = 1
+        ExplicitTop = 191
         ExplicitHeight = 216
         ClientRectBottom = 209
         ClientRectRight = 174
@@ -836,6 +836,7 @@ inherited TransaksiItem: TTransaksiItem
         object cxTabSheet2: TcxTabSheet
           Caption = 'Detail'
           ImageIndex = 1
+          ExplicitWidth = 828
           object lbl44: TLabel
             Left = 14
             Top = 8
@@ -1603,10 +1604,7 @@ inherited TransaksiItem: TTransaksiItem
         object cxDetailJasa: TcxTabSheet
           Caption = 'Detail Jasa'
           ImageIndex = 2
-          ExplicitLeft = 0
-          ExplicitTop = 0
           ExplicitWidth = 828
-          ExplicitHeight = 0
           object lbl38: TLabel
             Left = 14
             Top = 8
@@ -1766,6 +1764,44 @@ inherited TransaksiItem: TTransaksiItem
         OnExit = rbJasaExit
         OnKeyDown = rbJasaKeyDown
         Width = 121
+      end
+      object cxImage1: TcxImage
+        Left = 690
+        Top = 3
+        TabOrder = 13
+        Visible = False
+        Height = 169
+        Width = 140
+      end
+      object cxButton1: TcxButton
+        Left = 690
+        Top = 176
+        Width = 69
+        Height = 25
+        Caption = '&Pilih'
+        TabOrder = 14
+        Visible = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object cxButton2: TcxButton
+        Left = 764
+        Top = 176
+        Width = 66
+        Height = 25
+        Caption = '&Cancel'
+        TabOrder = 15
+        Visible = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
       end
     end
     inherited dxLayoutControl1Group_Root: TdxLayoutGroup

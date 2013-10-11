@@ -18,7 +18,7 @@ uses
   dxLayoutcxEditAdapters, dxLayoutLookAndFeels, dxLayoutControl, StdCtrls,
   cxButtons, cxPC, cxGroupBox, ExtCtrls, cxTextEdit, cxMaskEdit,
   cxDropDownEdit, cxCalendar, cxCheckBox, cxRadioGroup, Main, DB, MemDS,
-  DBAccess, Uni, ActnList;
+  DBAccess, Uni, ActnList, cxImage;
 
 type
   TTransaksiItem = class(TTransaksiForm)
@@ -209,6 +209,9 @@ type
     QCariStatusItem: TSmallintField;
     QCariStatusProduk: TSmallintField;
     QCariSistemHJ: TSmallintField;
+    cxImage1: TcxImage;
+    cxButton1: TcxButton;
+    cxButton2: TcxButton;
     procedure FormCreate(Sender: TObject);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
     procedure edtJenisKeyDown(Sender: TObject; var Key: Word;
